@@ -1,0 +1,34 @@
+<%= form_tag('/search') do -%>
+  <%= select_tag :s, options_for_select(@users.collect{|p| p.name}), :onchange => "this.form.submit();" %>
+<% end -%>
+<br>
+<%unless (@name.nil?)%>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Firstname</th>
+      <th>Lastname</th>    
+      <th>Created at</th>
+      <th>Updated at</th>
+    </tr>   
+      <td><%= @name.name %></td>
+      <td><%= @name.email %></td>
+      <td><%= @name.firstname %></td>
+      <td><%= @name.lastname %></td>
+
+      <td><%= @name.created_at.to_date %></td>
+      <td><%= @name.updated_at.to_date %></td>
+     </tr>
+   </table>
+  <br />
+<%end%>
+
+
+
+
+
+
+
+
+
