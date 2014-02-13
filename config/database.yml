@@ -4,4 +4,4 @@ development:
   database: myapp_development
   pool: 5
   username: postgres
-  password: 
+  password: password
