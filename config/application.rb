@@ -26,7 +26,7 @@ module Use
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 
 
-    config.assets.initialize_on_precompile = true
+    config.assets.initialize_on_precompile = false
 
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
