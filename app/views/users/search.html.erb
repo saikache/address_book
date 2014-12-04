@@ -25,7 +25,18 @@
 <%end%>
 
 
+# Reference
 
+<%#= form_tag order_history_path,:remote => true, :method => 'get' do %>
+				<!--<select id="my" name="sort_by" onchange="$(this).parent('form').submit();" >-->
+				<!--  <option value="order_new_to_old">Order Date (newest to oldest)</option>-->
+				<!--  <option value="sending_new_to_old">Sending Date (newest to oldest)</option>-->
+				<!--  <option value="order_old_to_new">Order Date (oldest to newest)</option>-->
+				<!--  <option value="sending_old_to_new">Sending Date (oldest to newest)</option>				  			 -->
+				<!--</select>-->
+  <%#= select_tag :sort_by, options_for_select(@type.collect{|p| p}),
+  onchange: "$(this).parent('form').submit();"%>
+<%# end -%>
 
 
 
