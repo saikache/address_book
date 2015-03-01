@@ -12,11 +12,7 @@ end
 
  FileUtils::mkdir_p 'public/fb'
 
-
-
-   # dir = File.dirname("#{Rails.root}/log/#{today}/my.log")
-
-    system "cp #{Rails.root}/assets/rails.png  #{Rails.root}/public/fb"
+    system "cp #{Rails.root}/assets/rails.png #{Rails.root}/public/fb"
  
 module Use
   class Application < Rails::Application
