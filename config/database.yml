@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: myapp_development
+  database: address_book_development
   pool: 5
   username: postgres
-  password: maheshwari
+  password: maisa
